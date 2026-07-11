@@ -1,0 +1,29 @@
+{
+  "name": "genpark-customer-cohort-value-predictor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Predict monthly customer registration cohort values.",
+  "author": "genpark",
+  "category": "analytics",
+  "tags": [
+    "cohorts",
+    "ltv"
+  ],
+  "inputs": {
+    "cohort_size": {
+      "type": "integer"
+    },
+    "average_first_month_revenue": {
+      "type": "number"
+    },
+    "monthly_retention_multiplier": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "projected_12m_cohort_revenue": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
